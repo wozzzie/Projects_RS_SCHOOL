@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/favicon.ico" />
+    <!-- MAIN STYLES -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- TITLE -->
+    <title>Tic-tac</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <div class="container main__container">
+        <div class="main__title">Crosses VS Zeros</div>
+        <h2 class="main__status"></h2>
+        <table class="main__table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-td="name"></td>
+              <td data-td="score"></td>
+            </tr>
+            <tr>
+              <td data-td="name"></td>
+              <td data-td="score"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form class="modal" action="javascript:void(0)" method="get">
+          <div class="modal__block">
+            <div class="modal__text">Enter your name! You will be "X".</div>
+            <input
+              autocomplete="off"
+              oninput="disabledBtn()"
+              id="yourName"
+              type="text"
+              class="modal__input"
+              placeholder="Type here..."
+            />
+            <div class="modal__text">Opponent's name! You will be "O".</div>
+            <input
+              autocomplete="off"
+              oninput="disabledBtn()"
+              id="opponentName"
+              type="text"
+              class="modal__input"
+              placeholder="Type here..."
+            />
+            <button
+              type="submit"
+              class="modal__start modal__start_disabled"
+              disabled
+            >
+              Let's go!
+            </button>
+          </div>
+        </form>
+
+        <div class="main__block">
+          <div class="main__block-cell" data-cell-index="0"></div>
+          <div class="main__block-cell" data-cell-index="1"></div>
+          <div class="main__block-cell" data-cell-index="2"></div>
+          <div class="main__block-cell" data-cell-index="3"></div>
+          <div class="main__block-cell" data-cell-index="4"></div>
+          <div class="main__block-cell" data-cell-index="5"></div>
+          <div class="main__block-cell" data-cell-index="6"></div>
+          <div class="main__block-cell" data-cell-index="7"></div>
+          <div class="main__block-cell" data-cell-index="8"></div>
+        </div>
+        <button class="main__restart">Restart Game</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__copyright">
+            <span>©</span>
+            <span>2022</span>
+            <span>
+              <a
+                href="https://github.com/goldmarkol"
+                class="footer__copyright-github"
+                >github</a
+              ></span
+            >
+          </div>
+          <a href="https://rs.school/js-stage0/"
+            ><div class="footer__logo"></div
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
