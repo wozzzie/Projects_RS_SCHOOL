@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+  background-image: url("../assets/img/forest.jpg");
+  background-size: cover;
+
+  &__play {
+    @include shine_hover;
+    @include play_hover;
+    transition: 0.7s;
+
+    width: 160px;
+    height: 160px;
+    background-image: url("../assets/svg/play.svg");
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+
+    @media (max-width: 568px) {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  &__pause {
+    @include play_hover;
+    transition: 0.5s;
+
+    width: 160px;
+    height: 160px;
+    background-image: url("../assets/svg/pause.svg");
+    background-size: contain;
+    background-color: transparent;
+    border: 0;
+  }
+}
