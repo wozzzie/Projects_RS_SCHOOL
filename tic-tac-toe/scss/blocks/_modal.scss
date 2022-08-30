@@ -1,0 +1,49 @@
+.modal {
+  &__block {
+    margin: 15px auto;
+    width: 100%;
+    max-width: 450px;
+    height: 350px;
+    background-color: $black-color;
+    border: 10px solid $black-color;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__text {
+    font-size: 32px;
+  }
+
+  &__input {
+    color: $black-color;
+    width: 280px;
+    height: 40px;
+    font-size: 28px;
+    background-color: $white-color;
+  }
+
+  &__start {
+    @include btn-border-drawing($white-color, $black-color, 4px, bottom, right);
+
+    margin: 0 auto;
+    width: 200px;
+    height: 40px;
+    color: $black-color;
+    font-size: 26px;
+    background-color: $white-color;
+    cursor: pointer;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    &:active {
+      transform: scale(0.9);
+    }
+
+    &_disabled {
+      opacity: 0.75;
+    }
+  }
+}
