@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="icon" href="./assets/favicon/favicon.ico" />
+    <!-- MAIN STYLES -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- TITLE -->
+    <title>Matrix-game</title>
+  </head>
+  <body class="body">
+    <main class="main">
+      <div class="container main__container">
+        <h1 class="main__title">Memory game...</h1>
+
+        <table class="main__table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-td="name"></td>
+              <td data-td="score"></td>
+            </tr>
+            <tr>
+              <td data-td="name"></td>
+              <td data-td="score"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <form class="modal" action="javascript:void(0)" method="get">
+          <div class="modal__block">
+            <div class="modal__text">Enter your name!</div>
+            <input
+              autocomplete="off"
+              oninput="disabledBtn()"
+              id="yourName"
+              type="text"
+              class="modal__input"
+              placeholder="Type here..."
+            />
+            <button
+              type="submit"
+              class="modal__start modal__start_disabled"
+              disabled
+            >
+              Let's start
+            </button>
+          </div>
+        </form>
+
+        <div class="main__block">
+          <div class="main__block-cell" data-card="neo">
+            <img class="frontImg" src="./assets/icons/neo.png" alt="neo" />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="neo">
+            <img class="frontImg" src="./assets/icons/neo.png" alt="neo" />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="morpheus">
+            <img
+              class="frontImg"
+              src="./assets/icons/morpheus.png"
+              alt="morpheus"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="morpheus">
+            <img
+              class="frontImg"
+              src="./assets/icons/morpheus.png"
+              alt="morpheus"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="niobe">
+            <img class="frontImg" src="./assets/icons/niobe.png" alt="niobe" />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="niobe">
+            <img class="frontImg" src="./assets/icons/niobe.png" alt="niobe" />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="trinity">
+            <img
+              class="frontImg"
+              src="./assets/icons/trinity.png"
+              alt="trinity"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="trinity">
+            <img
+              class="frontImg"
+              src="./assets/icons/trinity.png"
+              alt="trinity"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="scene">
+            <img
+              class="frontImg"
+              src="./assets/icons/matrix-scene.png"
+              alt="matrix-scene"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="scene">
+            <img
+              class="frontImg"
+              src="./assets/icons/matrix-scene.png"
+              alt="matrix-scene"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="matrix">
+            <img
+              class="frontImg"
+              src="./assets/icons/matrix.png"
+              alt="matrix"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+          <div class="main__block-cell" data-card="matrix">
+            <img
+              class="frontImg"
+              src="./assets/icons/matrix.png"
+              alt="matrix"
+            />
+            <img class="backImg" src="./assets/icons/shirt.png" alt="matrix" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
