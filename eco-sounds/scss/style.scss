@@ -1,0 +1,31 @@
+@import "base/_mixins.scss";
+@import "base/_variables.scss";
+
+@import "blocks/_header.scss";
+@import "blocks/_main.scss";
+@import "blocks/_footer.scss";
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.container {
+  width: calc(100% - 40px);
+  max-width: 1440px;
+  margin: 0 auto;
+//   padding: 0 20px;
+}
