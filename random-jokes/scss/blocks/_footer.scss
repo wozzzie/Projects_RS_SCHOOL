@@ -1,0 +1,48 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+
+    @media (max-width: 430px) {
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+
+  &__copyright {
+    display: flex;
+    gap: 20px;
+    color: $main-color;
+
+    &-github {
+      color: $blue-color;
+      text-decoration: none;
+      transition: 0.5s;
+
+      &:hover {
+        color: $pink-color;
+      }
+    }
+  }
+
+  &__logo {
+    transition: 0.5s;
+
+    filter: $blue-filter;
+    width: 115px;
+    height: 50px;
+    background-image: url("../assets/svg/rss.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:hover {
+      filter: $pink-filter;
+    }
+  }
+}

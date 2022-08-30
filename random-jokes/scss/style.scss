@@ -1,0 +1,33 @@
+@import "base/_mixins.scss";
+@import "base/_variables.scss";
+
+@import "blocks/_main.scss";
+@import "blocks/_footer.scss";
+
+* {
+  font-family: "Archivo", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background-image: url("../assets/img/0.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  transition: 0.5s;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    background-size: auto;
+  }
+}
