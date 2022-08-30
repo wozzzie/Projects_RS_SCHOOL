@@ -1,0 +1,214 @@
+.main {
+  background: $black-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(10px);
+    z-index: -1;
+  }
+
+  &__container {
+    position: absolute;
+    height: 400px;
+    width: 334px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $black-color;
+    border-radius: 10px;
+    box-shadow: 0 0 10px $black-color;
+
+    @media (max-width: 470px) {
+      width: 100%;
+    }
+  }
+
+  &__player {
+    @include shine_hover;
+    transition: 0.5s;
+
+    position: absolute;
+    height: 50%;
+    width: 103%;
+    background: linear-gradient(455deg, rgb(70, 68, 68), rgb(36, 35, 35));
+    z-index: 4;
+    bottom: -17%;
+  }
+
+  &__cover {
+    position: absolute;
+    width: 130%;
+    top: -7%;
+    transition: 1s;
+    z-index: 3;
+    transform: scale(1);
+
+    @media (max-width: 470px) {
+      width: 140%;
+    }
+
+    &_active {
+      transform: scale(1.15);
+    }
+  }
+
+  &__singer {
+    position: absolute;
+    z-index: 4;
+    color: $green-color;
+    font-weight: 400;
+    font-size: 20px;
+    bottom: 21%;
+    left: 26%;
+  }
+
+  &__song {
+    position: absolute;
+    z-index: 4;
+    color: $main-color;
+    font-size: 17px;
+    bottom: 15%;
+    left: 26%;
+  }
+
+  &__play {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+    cursor: pointer;
+    bottom: 15%;
+    z-index: 4;
+    font-size: 53px;
+    left: 8%;
+    transition: 0.3s;
+    background-image: url("../assets/svg/play.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__pause {
+    background-image: url("../assets/svg/pause.png");
+  }
+
+  &__forward,
+  &__backward {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    filter: invert(1);
+    cursor: pointer;
+    bottom: 13.5%;
+    font-size: 40px;
+    z-index: 4;
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  &__forward {
+    background-image: url("../assets/svg/forward.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 10%;
+  }
+
+  &__backward {
+    background-image: url("../assets/svg/backward.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 10.3%;
+    bottom: 22%;
+  }
+
+  &__currentTime {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    bottom: -7.5%;
+    left: 17%;
+    z-index: 4;
+    font-size: 13px;
+    color: $main-color;
+    align-items: center;
+  }
+
+  &__durationTime {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    bottom: -1%;
+    right: 11%;
+    z-index: 4;
+    font-size: 13px;
+    align-items: center;
+    color: $green-color;
+  }
+
+  &__progress-bar {
+    @include shine_hover;
+    transition: 0.5s;
+
+    appearance: none;
+    position: absolute;
+    z-index: 20;
+    height: 5px;
+    background: $black-color;
+    width: 213.4px;
+    bottom: 6%;
+    border-radius: 30px;
+    left: 18%;
+
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      margin-top: -3px;
+      margin-left: 0px;
+      height: 10px;
+      width: 7px;
+      border: 0;
+      background: -webkit-linear-gradient(
+        45deg,
+        rgb(213, 213, 213),
+        $green-color
+      );
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    &::-webkit-slider-runnable-track {
+      appearance: none;
+      appearance: none;
+      cursor: pointer;
+      max-height: 5px;
+      border-radius: 30px;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
