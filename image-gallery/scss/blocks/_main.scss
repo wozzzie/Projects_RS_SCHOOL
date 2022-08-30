@@ -1,0 +1,28 @@
+.main {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  &__images {
+    width: 30%;
+    object-fit: cover;
+    min-width: 280px;
+    border-radius: 10px;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(0.8);
+      transition: 0.5s;
+      cursor: pointer;
+    }
+  }
+
+  &__no-results {
+    color: $main-color;
+    font-family: "Archivo", sans-serif;
+  }
+}

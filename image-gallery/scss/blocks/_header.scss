@@ -1,0 +1,57 @@
+.header {
+  &__logo {
+    background-image: url("../assets/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+      transition: 0.5s;
+    }
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__search-input {
+    background: $blue-color;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 0 none;
+    width: 300px;
+
+    &::-webkit-input-placeholder {
+      /* WebKit browsers */
+      color: $main-color;
+    }
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: $main-color;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: $main-color;
+    }
+
+    &_btn {
+      background: $darkBlue-color;
+      color: $main-color;
+      padding: 10px 20px;
+      border-radius: 0 5px 5px 0;
+      border: 0 none;
+      font-weight: bold;
+    }
+  }
+}
