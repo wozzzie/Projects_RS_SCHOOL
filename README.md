@@ -9,3 +9,6 @@ https://wozzzie.github.io/Projects_RS_SCHOOL/audio-player/
 
 2. Eco-sounds
 https://wozzzie.github.io/Projects_RS_SCHOOL/eco-sounds/
+
+3. Image-gallery
+https://wozzzie.github.io/Projects_RS_SCHOOL/image-gallery/
