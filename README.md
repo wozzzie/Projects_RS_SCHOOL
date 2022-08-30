@@ -6,3 +6,6 @@ Enjoy!
 
 1. Audio-player
 https://wozzzie.github.io/Projects_RS_SCHOOL/audio-player/
+
+2. Eco-sounds
+https://wozzzie.github.io/Projects_RS_SCHOOL/eco-sounds/
