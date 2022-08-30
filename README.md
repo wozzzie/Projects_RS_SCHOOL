@@ -15,3 +15,6 @@ https://wozzzie.github.io/Projects_RS_SCHOOL/image-gallery/
 
 4. Memory-game
 https://wozzzie.github.io/Projects_RS_SCHOOL/memory-game/
+
+5. Random-jokes
+https://wozzzie.github.io/Projects_RS_SCHOOL/random-jokes/
