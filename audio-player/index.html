@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+    <!-- MAIN STYLES -->
+    <link rel="stylesheet" href="css/style.min.css" />
+    <!-- TITLE -->
+    <title>Music Player</title>
+  </head>
+  <body class="main">
+    <!-- ============ MAIN ============ -->
+    <img src="./assets/img/pelmeny.png" alt="cover" class="main__background" />
+    <audio src="./assets/audio/pelmeny.mp3"></audio>
+    <div class="container main__container">
+      <div class="main__player"></div>
+      <img src="./assets/img/pelmeny.png" alt="cover" class="main__cover" />
+      <div class="main__play"></div>
+      <div
+        src="./assets/svg/forward.png"
+        alt="forward"
+        class="main__forward"
+      ></div>
+      <div
+        src="./assets/svg/backward.png"
+        alt="backward"
+        class="main__backward"
+      ></div>
+      <div class="main__singer">DailyRay</div>
+      <div class="main__song">Good dumplings</div>
+      <input
+        type="range"
+        class="main__progress-bar"
+        min="0"
+        max="86"
+        value="0"
+      />
+      <div class="main__currentTime">0:00</div>
+      <div class="main__durationTime">1:26</div>
+    </div>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__wrapper">
+          <div class="footer__copyright">
+            <span>©</span>
+            <span>2022</span>
+            <span>
+              <a
+                href="https://github.com/goldmarkol"
+                class="footer__copyright-github"
+                >github</a
+              ></span
+            >
+          </div>
+          <a href="https://rs.school/js-stage0/"
+            ><div class="footer__logo"></div
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
